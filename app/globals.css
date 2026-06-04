@@ -1,15 +1,48 @@
 @import "tailwindcss";
 
-#sticky-header {
-  transition: opacity 0.3s ease-in-out;
+.font-display {
+  font-family: var(--font-display), 'Arial Narrow', sans-serif;
+  letter-spacing: 0.05em;
 }
 
-.swiper {
-  width: 90%;
-  aspect-ratio: 16 / 9;
+.label-xs {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #e8a020;
+  font-weight: 500;
 }
 
+.nav-link { position: relative; transition: color 0.2s; }
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after { width: 100%; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+.animate-fade-up { animation: fadeUp 0.9s ease forwards; }
+.delay-100 { animation-delay: 0.1s;  opacity: 0; }
+.delay-200 { animation-delay: 0.25s; opacity: 0; }
+.delay-300 { animation-delay: 0.4s;  opacity: 0; }
+.delay-400 { animation-delay: 0.55s; opacity: 0; }
+.delay-500 { animation-delay: 0.7s;  opacity: 0; }
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(8px); }
+}
+.scroll-indicator { animation: scrollBounce 2s infinite; }
+
+.swiper { width: 90%; aspect-ratio: 16 / 9; }
 .swiper-button-next,
-.swiper-button-prev {
-  color: #fff !important;
-}
+.swiper-button-prev { color: #fff !important; }
