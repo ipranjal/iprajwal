@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/style.css" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+  <title>Project - Modular Weapon System</title>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div id="sticky-header" class="fixed top-0 left-0 w-full bg-black text-white shadow-lg z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-8">
+      <!-- Logo -->
+      <h1>
+        <a href="/" class="text-xl font-bold">
+          Prajwal Pandey
+          <br>
+          <span class="text-sm hidden md:block">Technical Game Designer</span>
+        </a>
+      </h1>
+
+      <!-- Hamburger Menu Button -->
+      <button id="menu-toggle" class="block md:hidden text-white focus:outline-none">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav id="menu" class="hidden md:flex space-x-4">
+        <a href="/#about" class="w-32 px-4 py-2 border border-white text-white rounded-lg flex justify-center items-center hover:bg-white hover:bg-opacity-80 hover:text-black transition">About Me</a>
+        <a href="/#projects" class="w-32 px-4 py-2 border border-white text-white rounded-lg flex justify-center items-center hover:bg-white hover:bg-opacity-80 hover:text-black transition">Projects</a>
+        <a href="/prajwal-pandey-resume.pdf" target="_blank" class="w-32 px-4 py-2 border border-white text-white rounded-lg flex justify-center items-center hover:bg-white hover:bg-opacity-80 hover:text-black transition">CV</a>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-black text-white">
+      <a href="/#about" class="block px-4 py-2 border-t border-gray-700 hover:bg-gray-800">About Me</a>
+      <a href="/#projects" class="block px-4 py-2 border-t border-gray-700 hover:bg-gray-800">Projects</a>
+      <a href="/prajwal-pandey-resume.pdf" target="_blank" class="block px-4 py-2 border-t border-gray-700 hover:bg-gray-800">CV</a>
+    </div>
+  </div>
+  <header class="relative w-full h-102">
+    <!-- Image Background -->
+    <img src="/src/assets/weapon.png" alt="Utility AI" class="absolute top-0 left-0 w-full h-full object-cover z-0">
+
+    <!-- Overlay -->
+    <div class="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-10"></div>
+
+    <!-- Text Content -->
+    <div class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center text-white z-20">
+      <h1 class="text-4xl md:text-6xl font-bold">Modular Weapon System</h1>
+    </div>
+  </header>
+
+  <section id="responsibilities" class="py-16 px-8 0">
+    <div class="container mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-300">About</h2>
+      <div class="space-y-8">
+        <!-- Responsibilities List -->
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <i class="fas fa-check-circle text-gray-400 mr-4 mt-1"></i>
+            <p>Working on an Advance Modular Weapon system that allows the user to create weapons without touching blueprint scripts.</p>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check-circle text-gray-400 mr-4 mt-1"></i>
+            <p>The goal with this project is to creatte attributes like Mesh, Animation, projectile & hitscan settings, Recoil & Spray pattern, ADS Settings and additional realization settings that can be adjusted just through the property tab to create unique weapons for a game.</p>
+          </li>          
+        </ul>
+      </div>      
+    </div>
+  </section>
+  
+  
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50">
+  <button class="absolute top-4 right-4 text-white text-3xl font-bold" onclick="closeLightbox()">×</button>
+  <img id="lightbox-image" src="" alt="Lightbox Image" class="max-w-full max-h-full rounded-lg shadow-lg">
+</div>
+
+<script>
+    // JavaScript to toggle the mobile menu
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Open Lightbox
+  function openLightbox(imageSrc) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    lightboxImage.src = imageSrc;
+    lightbox.classList.remove('hidden');
+  }
+
+  // Close Lightbox
+  function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.add('hidden');
+  }
+</script>
+
+</body>
+</html>

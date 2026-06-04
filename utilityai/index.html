@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/style.css" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+  <title>Project - Utility AI</title>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <div id="sticky-header" class="fixed top-0 left-0 w-full bg-black text-white shadow-lg z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-8">
+      <!-- Logo -->
+      <h1>
+        <a href="/" class="text-xl font-bold">
+          Prajwal Pandey
+          <br>
+          <span class="text-sm hidden md:block">Technical Game Designer</span>
+        </a>
+      </h1>
+
+      <!-- Hamburger Menu Button -->
+      <button id="menu-toggle" class="block md:hidden text-white focus:outline-none">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav id="menu" class="hidden md:flex space-x-4">
+        <a href="/#about" class="w-32 px-4 py-2 border border-white text-white rounded-lg flex justify-center items-center hover:bg-white hover:bg-opacity-80 hover:text-black transition">About Me</a>
+        <a href="/#projects" class="w-32 px-4 py-2 border border-white text-white rounded-lg flex justify-center items-center hover:bg-white hover:bg-opacity-80 hover:text-black transition">Projects</a>
+        <a href="/prajwal-pandey-resume.pdf" target="_blank" class="w-32 px-4 py-2 border border-white text-white rounded-lg flex justify-center items-center hover:bg-white hover:bg-opacity-80 hover:text-black transition">CV</a>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-black text-white">
+      <a href="/#about" class="block px-4 py-2 border-t border-gray-700 hover:bg-gray-800">About Me</a>
+      <a href="/#projects" class="block px-4 py-2 border-t border-gray-700 hover:bg-gray-800">Projects</a>
+      <a href="/prajwal-pandey-resume.pdf" target="_blank" class="block px-4 py-2 border-t border-gray-700 hover:bg-gray-800">CV</a>
+    </div>
+  </div>
+  <header class="relative w-full h-102">
+    <!-- Image Background -->
+    <img src="/src/assets/utility-ai.png" alt="Utility AI" class="absolute top-0 left-0 w-full h-full object-cover z-0">
+
+    <!-- Overlay -->
+    <div class="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-10"></div>
+
+    <!-- Text Content -->
+    <div class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center text-white z-20">
+      <h1 class="text-4xl md:text-6xl font-bold">Utility AI System</h1>
+    </div>
+  </header>
+  <section id="github" class="py-16 px-8">
+    <div class="container mx-auto flex flex-col items-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-gray-300">GitHub Repository</h2>
+      <a href="https://github.com/vjs22334/GenericNPCAI" target="_blank" 
+         class="w-82 px-6 py-3 border border-white text-white rounded-lg shadow-md flex justify-center items-center hover:bg-white hover:text-black transition">
+        View Repository on GitHub
+      </a>
+    </div>
+  </section>
+  <section id="responsibilities" class="py-16 px-8 bg-zinc-900 text-zinc-200">
+    <div class="container mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-300">Responsibilities</h2>
+      <div class="space-y-8">
+        <!-- Responsibilities List -->
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <i class="fas fa-check-circle text-gray-400 mr-4 mt-1"></i>
+            <p>Collaborated with a programmer to build a modular Utility AI system in Unreal Engine.</p>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check-circle text-gray-400 mr-4 mt-1"></i>
+            <p>Created a Character Blueprint for the AI Controller to Move, Crouch, Aim & Shoot and handled the tech anim side of things.</p>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check-circle text-gray-400 mr-4 mt-1"></i>
+            <p>Worked with the Environment Query system for the AI to use while navigating around and performing behaviors such as Reposition, Strafe, Cover, Petrol & Flank.</p>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check-circle text-gray-400 mr-4 mt-1"></i>
+            <p>Worked in setting up the Goal Generator and Goal Data using C++.</p>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check-circle text-gray-400 mr-4 mt-1"></i>
+            <p>Also created a modular enemy class & weapon system to easily create different weapons and enemy classes with unique attributes.</p>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check-circle text-gray-400 mr-4 mt-1"></i>
+            <p>Overall balancing and scoring of the AI System Combat Scenario.</p>
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- Key Skills -->
+      <div class="mt-12">
+        <h3 class="text-2xl font-bold mb-6 text-gray-300 text-center">Key Skills</h3>
+        <div class="flex flex-wrap justify-center gap-4">
+          <span class="px-4 py-2 bg-gray-700 text-white rounded-lg shadow-md">Unreal Blueprint</span>
+          <span class="px-4 py-2 bg-gray-700 text-white rounded-lg shadow-md">EQS</span>
+          <span class="px-4 py-2 bg-gray-700 text-white rounded-lg shadow-md">Tech Anim</span>
+          <span class="px-4 py-2 bg-gray-700 text-white rounded-lg shadow-md">C++</span>
+          <span class="px-4 py-2 bg-gray-700 text-white rounded-lg shadow-md">AI System</span>
+          <span class="px-4 py-2 bg-gray-700 text-white rounded-lg shadow-md">System Design</span>
+          <span class="px-4 py-2 bg-gray-700 text-white rounded-lg shadow-md">Combat Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="design" class="py-16 px-8">
+    <div class="container mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-300">Design</h2>
+      <p class="text-lg leading-relaxed mt-5 mb-8">
+        Designed various AI Behaviors to simulate a battle arena scenario using various tactics and decision making ( Similar to shooter games like Division ).<br>
+        Designed variables that impact the behaviors for the utility AI & worked on the scoring for them.
+      </p>
+      <!-- Images Row -->
+    
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+        <div class="relative group cursor-pointer" onclick="openLightbox('/src/assets/design1.png')">
+          <img src="/src/assets/design1.png" alt="Design 1" class="w-full h-96 object-cover rounded-lg shadow-md ">
+          
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black  flex items-center justify-center opacity-0 group-hover:opacity-50 transition">
+            <i class="fas fa-search-plus text-white text-4xl"></i>
+          </div>
+        </div>
+        <div class="relative group cursor-pointer" onclick="openLightbox('/src/assets/design2.png')">
+          <img src="/src/assets/design2.png" alt="Design 2" class="w-full h-96 object-cover rounded-lg shadow-md ">
+          
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black  flex items-center justify-center opacity-0 group-hover:opacity-50 transition">
+            <i class="fas fa-search-plus text-white text-4xl"></i>
+          </div>
+        </div>
+        <div class="relative group cursor-pointer" onclick="openLightbox('/src/assets/design3.png')">
+          <img src="/src/assets/design3.png" alt="Design 3" class="w-full h-96 object-cover rounded-lg shadow-md ">
+          
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black  flex items-center justify-center opacity-0 group-hover:opacity-50 transition">
+            <i class="fas fa-search-plus text-white text-4xl"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Text Paragraph -->
+      
+    </div>
+  </section>
+  <section id="weapon-component" class="py-16 px-8 bg-zinc-900 text-zinc-200">
+  <div class="container mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-300">Weapon Component</h2>
+    <!-- Description -->
+    <p class="text-lg leading-relaxed text-center mb-8">
+      Created a small scale weapon component that works with player & AI. The modular design enables the user to create different weapons using property tab.
+    </p>
+    <!-- Images Row -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class=" md:col-span-2 relative group cursor-pointer" onclick="openLightbox('/src/assets/weapon1.png')">
+        <img src="/src/assets/weapon1.png" alt="Weapon 1" class="w-full h-96 object-cover rounded-lg shadow-md ">
+        
+        <!-- Hover Overlay -->
+        <div class="absolute inset-0 bg-black  flex items-center justify-center opacity-0 group-hover:opacity-50 transition">
+          <i class="fas fa-search-plus text-white text-4xl"></i>
+        </div>
+      </div>
+      <div class="relative group cursor-pointer" onclick="openLightbox('/src/assets/weapon2.png')">
+        <img src="/src/assets/weapon2.png" alt="Weapon 2" class="w-full h-96 object-cover rounded-lg shadow-md ">
+        
+        <!-- Hover Overlay -->
+        <div class="absolute inset-0 bg-black  flex items-center justify-center opacity-0 group-hover:opacity-50 transition">
+          <i class="fas fa-search-plus text-white text-4xl"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="environmental-query-system" class="py-16 px-8 ">
+  <div class="container mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-300">Environmental Query System</h2>
+    <!-- Description -->
+    <p class="text-lg leading-relaxed text-center mb-8">
+      Used EQS to generate nodes in order to specific execute navigational behavior.
+    </p>
+    <!-- Images Row -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+      <div class="relative group cursor-pointer" onclick="openLightbox('/src/assets/EQS1.png')">
+        <img src="/src/assets/EQS1.png" alt="Weapon 2" class="w-full h-96 object-cover rounded-lg shadow-md ">
+        
+        <!-- Hover Overlay -->
+        <div class="absolute inset-0 bg-black  flex items-center justify-center opacity-0 group-hover:opacity-50 transition">
+          <i class="fas fa-search-plus text-white text-4xl"></i>
+        </div>
+      </div>
+      <div class="md:col-span-2 relative group cursor-pointer" onclick="openLightbox('/src/assets/EQS2.gif')">
+        <img src="/src/assets/EQS2.gif" alt="Weapon 2" class="w-full h-96 object-cover rounded-lg shadow-md ">
+        
+        <!-- Hover Overlay -->
+        <div class="absolute inset-0 bg-black  flex items-center justify-center opacity-0 group-hover:opacity-50 transition">
+          <i class="fas fa-search-plus text-white text-4xl"></i>
+        </div>
+      </div>
+    </div>
+    <p class="text-lg leading-relaxed text-center mb-8">
+      Cover EQS - Finds a cover that is hidden from all enemies , is near the target enemy and not reserved by any teammate.
+    </p>
+    <div class="relative group cursor-pointer mb-6" onclick="openLightbox('/src/assets/EQS3.png')">
+      <img src="/src/assets/EQS3.png" alt="EQS3" class="w-1/2 mx-auto h-96 object-cover rounded-lg shadow-md ">
+      
+      <!-- Hover Overlay -->
+      <div class="absolute inset-0 bg-black  flex items-center justify-center opacity-0 group-hover:opacity-50 transition">
+        <i class="fas fa-search-plus text-white text-4xl"></i>
+      </div>
+    </div>
+    <p class="text-lg leading-relaxed text-center mb-8">
+      Reposition EQS to find a better position to shoot enemy with context to other enemies and teammates around.
+    </p>
+   
+    <div class="mx-auto flex flex-col items-center mb-6">
+      <img src="/src/assets/EQS4.png" alt="EQS 4" class="w-9/12 h-auto object-cover rounded-lg shadow-md mb-8">
+    </div>
+    <p class="text-lg leading-relaxed text-center mb-8">
+      List of EQS Context used for better node calculation results.
+    </p>
+  </div>
+  
+</section>
+<section id="character" class="py-16 px-8 bg-zinc-900 text-zinc-200">
+  <div class="container mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-300">Character</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+      <div class="relative group cursor-pointer" onclick="openLightbox('/src/assets/character1.png')">
+        <img src="/src/assets/character1.png" alt="Character 1" class="w-full h-96 object-cover rounded-lg shadow-md ">
+        
+        <!-- Hover Overlay -->
+        <div class="absolute inset-0 bg-black  flex items-center justify-center opacity-0 group-hover:opacity-50 transition">
+          <i class="fas fa-search-plus text-white text-4xl"></i>
+        </div>
+      </div>
+      <div class="relative group cursor-pointer" onclick="openLightbox('/src/assets/weapon2.png')">
+        <img src="/src/assets/character2.png" alt="Character 2" class="w-full h-96 object-cover rounded-lg shadow-md ">
+        
+        <!-- Hover Overlay -->
+        <div class="absolute inset-0 bg-black  flex items-center justify-center opacity-0 group-hover:opacity-50 transition">
+          <i class="fas fa-search-plus text-white text-4xl"></i>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+      <div class="relative group cursor-pointer" onclick="openLightbox('/src/assets/character1.png')">
+        <img src="/src/assets/character3.png" alt="Character 1" class="w-full h-96 object-cover rounded-lg shadow-md ">
+        
+        <!-- Hover Overlay -->
+        <div class="absolute inset-0 bg-black  flex items-center justify-center opacity-0 group-hover:opacity-50 transition">
+          <i class="fas fa-search-plus text-white text-4xl"></i>
+        </div>
+      </div>
+      <div class="relative group cursor-pointer" onclick="openLightbox('/src/assets/weapon2.png')">
+        <img src="/src/assets/character4.png" alt="Character 2" class="w-full h-96 object-cover rounded-lg shadow-md ">
+        
+        <!-- Hover Overlay -->
+        <div class="absolute inset-0 bg-black  flex items-center justify-center opacity-0 group-hover:opacity-50 transition">
+          <i class="fas fa-search-plus text-white text-4xl"></i>
+        </div>
+      </div>
+    </div>
+    <p class="text-lg leading-relaxed mb-8">
+      Worked with Unreal’s Animation Blueprint to create Aim offset for the AI controller to look, aim & shoot along with other movement abilities.
+    </p>
+  </div>
+</section>
+
+<section id="videos" class="py-16 px-8">
+  <div class="container mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Videos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+      <div class="relative w-full">
+        <iframe 
+          class="w-full h-96 rounded-lg shadow-lg mx-auto"
+          src="https://www.youtube.com/embed/T-m9Xv3hVhY?si=l0KMTSYSFt1O98Wr"
+          title="Skull and Bones Trailer"
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        <p class="text-lg text-center leading-relaxed mt-4">
+          Showcase
+        </p>
+      </div>
+      <div class="relative w-full">
+        <iframe 
+          class="w-full h-96 rounded-lg shadow-lg mx-auto"
+          src="https://www.youtube.com/embed/t9uvMAhkY3o?si=J7-EEM6PLUdaFugF"
+          title="Skull and Bones Trailer"
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        <p class="text-lg text-center leading-relaxed mt-4">
+          Example on how to use Behavior Data Component
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50">
+  <button class="absolute top-4 right-4 text-white text-3xl font-bold" onclick="closeLightbox()">×</button>
+  <img id="lightbox-image" src="" alt="Lightbox Image" class="max-w-full max-h-full rounded-lg shadow-lg">
+</div>
+
+<script>
+    // JavaScript to toggle the mobile menu
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Open Lightbox
+  function openLightbox(imageSrc) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    lightboxImage.src = imageSrc;
+    lightbox.classList.remove('hidden');
+  }
+
+  // Close Lightbox
+  function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.add('hidden');
+  }
+</script>
+
+</body>
+</html>
