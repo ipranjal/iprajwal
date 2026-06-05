@@ -12,7 +12,7 @@ const projects = [
     role: 'Technical Game Designer',
     tags: ['AAA', 'AI Design', 'Encounter Design', 'Realization'],
     description:
-      'Led the Sea Monster feature — a core PvE pillar where players battle giant creatures in open-sea encounters. Owned the full lifecycle from paper design through prototyping, realization, and post-launch balance.',
+      'Worked on the Sea Monster feature — a core PvE pillar where players battle giant creatures in open-sea encounters. Owned the full lifecycle from paper design through prototyping, realization, and post-launch balance.',
   },
   {
     href: '/utilityai/',
