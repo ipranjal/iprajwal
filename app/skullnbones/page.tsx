@@ -42,7 +42,7 @@ export default function SkullNBonesPage() {
             SKULL<br />AND BONES
           </h1>
           <p className="text-zinc-400 text-sm md:text-base max-w-xl">
-            Technical Game Designer &mdash; Sea Monster Feature Lead
+            Technical Game Designer &mdash; Sea Monster Feature
           </p>
         </div>
       </header>
