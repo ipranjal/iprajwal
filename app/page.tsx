@@ -26,17 +26,53 @@ const projects = [
     description:
       'Built a modular Utility AI framework in Unreal Engine. Designed scoring, goal generation, and navigational behaviors (Cover, Reposition, Strafe, Flank) for a multi-agent combat scenario.',
   },
+]
+
+const githubProjects = [
   {
-    href: '/weapon/',
-    src: '/assets/weapon.jpg',
-    alt: 'Modular Weapon System',
-    num: '03',
-    title: 'Modular Weapon System',
-    studio: 'Personal Project',
-    role: 'Systems Designer',
-    tags: ['Unreal Engine', 'Blueprint', 'Systems Design'],
+    href: 'https://github.com/iAmGrazerX/SoulsEnemyAI',
+    title: 'Souls Enemy AI',
+    num: '01',
+    tags: ['Unreal Engine 5', 'C++', 'GAS', 'State Tree', 'Melee AI'],
     description:
-      'An advanced modular weapon framework enabling designers to configure diverse weapons — projectile, hitscan, ADS, recoil, and spray patterns — entirely through the property panel.',
+      'Enemy AI system for a Souls-like combat scenario. Each enemy wields different melee weapons and casts GAS-driven abilities, with behavior orchestrated entirely through Unreal\'s State Tree.',
+    language: 'C++',
+  },
+  {
+    href: 'https://github.com/iAmGrazerX/SWAT_AICompanion',
+    title: 'SWAT AI Companion',
+    num: '02',
+    tags: ['Unreal Engine 5', 'C++', 'GAS', 'AI Commands', 'Companion AI'],
+    description:
+      'Tactical AI companion inspired by Ready or Not. Listens to player commands and executes them through Unreal\'s Gameplay Ability System — supports breach, cover, move, and engage orders.',
+    language: 'C++',
+  },
+  {
+    href: 'https://github.com/iAmGrazerX/Military-Sim-Prototype',
+    title: 'Military Sim Prototype',
+    num: '03',
+    tags: ['Unreal Engine 5', 'Blueprint', 'Third Person', '3Cs', 'Prototype'],
+    description:
+      'Hardcore third-person shooter prototype with Ghost Recon Breakpoint-inspired 3Cs (Character, Camera, Controls). Focuses on grounded movement feel, ADS, and input responsiveness.',
+    language: 'Blueprint',
+  },
+  {
+    href: 'https://github.com/iAmGrazerX/AlienAI',
+    title: 'Alien AI',
+    num: '04',
+    tags: ['Unreal Engine 5', 'Blueprint', 'AI Perception', 'Horror AI'],
+    description:
+      'Replication of the Alien Isolation xenomorph AI using Unreal\'s AI Perception system. Explores sight, sound, and prediction-based threat assessment for horror-game tension.',
+    language: 'Blueprint',
+  },
+  {
+    href: 'https://github.com/iAmGrazerX/ModularWeaponSystem',
+    title: 'Modular Weapon System',
+    num: '05',
+    tags: ['Unreal Engine 5', 'Blueprint', 'Systems Design', 'Data Assets'],
+    description:
+      'Advanced modular weapon framework enabling designers to configure fully functional weapons — projectile, hitscan, ADS, recoil, and spray patterns — entirely through data assets, without touching a single Blueprint script.',
+    language: 'Blueprint',
   },
 ]
 
@@ -157,6 +193,64 @@ export default function Home() {
         ))}
       </section>
 
+      {/* Open Source */}
+      <section id="opensource" className="py-24 border-t border-white/5">
+        <div className="max-w-7xl mx-auto px-6 md:px-10 mb-16">
+          <p className="label-xs mb-3">GitHub</p>
+          <h2 className="font-display text-5xl md:text-6xl text-white tracking-wider">OPEN SOURCE</h2>
+          <p className="mt-4 text-zinc-500 text-sm max-w-xl">
+            Personal R&amp;D projects — prototypes built to explore mechanics, systems, and AI techniques in Unreal Engine.
+          </p>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+          {githubProjects.map((project) => (
+            <a
+              key={project.href}
+              href={project.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-[#0d0d0d] p-8 md:p-10 flex flex-col hover:bg-[#111] transition-colors duration-300"
+            >
+              <div className="flex items-start justify-between mb-6">
+                <span className="font-display text-5xl text-white/5 leading-none select-none">{project.num}</span>
+                <div className="flex items-center gap-2 text-zinc-600 group-hover:text-[#e8a020] transition-colors">
+                  <i className="fab fa-github text-lg" />
+                  <i className="fas fa-arrow-up-right-from-square text-xs" />
+                </div>
+              </div>
+
+              <h3 className="font-display text-2xl md:text-3xl text-white tracking-wider mb-3 group-hover:text-[#e8a020] transition-colors duration-300">
+                {project.title}
+              </h3>
+
+              <p className="text-zinc-400 text-sm leading-relaxed mb-6 flex-1">{project.description}</p>
+
+              <div className="flex flex-wrap gap-2 mt-auto">
+                {project.tags.map((tag) => (
+                  <span key={tag} className="text-[0.6rem] tracking-wider uppercase px-2.5 py-1 border border-white/10 text-zinc-500">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div className="max-w-7xl mx-auto px-6 md:px-10 mt-10 text-center md:text-left">
+          <a
+            href="https://github.com/iAmGrazerX"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-xs tracking-widest uppercase text-zinc-500 hover:text-[#e8a020] transition-colors"
+          >
+            <i className="fab fa-github" />
+            View all on GitHub
+            <i className="fas fa-arrow-right text-xs transition-transform duration-200 group-hover:translate-x-1" />
+          </a>
+        </div>
+      </section>
+
       {/* Skills */}
       <section className="py-24 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
@@ -210,10 +304,10 @@ export default function Home() {
                   <p className="font-display text-3xl text-[#e8a020]">Ubisoft</p>
                   <p className="text-[0.65rem] tracking-widest uppercase text-zinc-500 mt-1">Current Studio</p>
                 </div>
-                <div>
-                  <p className="font-display text-3xl text-[#e8a020]">1+</p>
-                  <p className="text-[0.65rem] tracking-widest uppercase text-zinc-500 mt-1">Shipped Titles</p>
-                </div>
+                {/* <div>
+                  <p className="font-display text-3xl text-[#e8a020]">Skull&nbsp;&amp;&nbsp;Bones</p>
+                  <p className="text-[0.65rem] tracking-widest uppercase text-zinc-500 mt-1">Shipped Title</p>
+                </div> */}
               </div>
 
               <p className="text-zinc-300 leading-relaxed mb-4">
