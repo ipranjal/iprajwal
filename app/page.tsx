@@ -10,7 +10,7 @@ const projects = [
     title: 'Skull and Bones',
     studio: 'Ubisoft Singapore',
     role: 'Technical Game Designer',
-    tags: ['AAA', 'AI Design', 'Encounter Design', 'Realization'],
+    tags: ['AAA', 'AI Design', 'Encounter Design', 'Live Ops Support'],
     description:
       'Worked on the Sea Monster feature - a core PvE pillar where players battle giant creatures in open-sea encounters. Worked during the full lifecycle from paper design through prototyping, realization, and post-launch balance.',
   },
@@ -33,25 +33,25 @@ const githubProjects = [
     href: 'https://github.com/iAmGrazerX/SoulsEnemyAI',
     title: 'Souls Enemy AI',
     num: '01',
-    tags: ['Unreal Engine 5', 'C++', 'GAS', 'State Tree', 'Melee AI'],
+    tags: ['Souls Like', 'C++', 'GAS', 'State Tree', 'Architecture Design'],
     description:
       'Built a modular Souls-like AI combat framework in Unreal Engine using StateTree and Gameplay Ability System, featuring weapon-driven behaviors, adaptive attack selection, and data-driven combat configuration.',
-    language: 'C++',
+    language: 'Blueprint & C++',
   },
   {
     href: 'https://github.com/iAmGrazerX/SWAT_AICompanion',
     title: 'SWAT AI Companion',
     num: '02',
-    tags: ['Unreal Engine 5', 'C++', 'GAS', 'AI Commands', 'Companion AI'],
+    tags: ['Tactical Sim', 'C++', 'GAS', 'AI Commands', 'Companion AI'],
     description:
       'Tactical AI companion inspired by Ready or Not. Listens to player commands and executes them through Unreal\'s Gameplay Ability System - supports breach, cover, move, and engage orders.',
-    language: 'C++',
+    language: 'Blueprint & C++',
   },
   {
     href: 'https://github.com/iAmGrazerX/Military-Sim-Prototype',
     title: 'Military Sim Prototype',
     num: '03',
-    tags: ['Unreal Engine 5', 'Blueprint', 'Third Person', '3Cs', 'Prototype'],
+    tags: ['Tactical Sim', 'Blueprint', 'Third Person', '3Cs', 'Prototype'],
     description:
       'Hardcore third-person shooter prototype with Ghost Recon Breakpoint-inspired 3Cs (Character, Camera, Controls). Focuses on grounded movement feel, ADS, and input responsiveness.',
     language: 'Blueprint',
@@ -60,7 +60,7 @@ const githubProjects = [
     href: 'https://github.com/iAmGrazerX/AlienAI',
     title: 'Alien AI',
     num: '04',
-    tags: ['Unreal Engine 5', 'Blueprint', 'AI Perception', 'Horror AI'],
+    tags: ['Horror AI', 'State Tree', 'AI Perception', 'Prototype'],
     description:
       'Replication of the Alien Isolation xenomorph AI using Unreal\'s AI Perception system. Explores sight, sound, and prediction-based threat assessment for horror-game tension.',
     language: 'Blueprint',
@@ -69,7 +69,7 @@ const githubProjects = [
     href: 'https://github.com/iAmGrazerX/ModularWeaponSystem',
     title: 'Modular Weapon System',
     num: '05',
-    tags: ['Unreal Engine 5', 'Blueprint', 'Systems Design', 'Data Assets'],
+    tags: ['Weapon Design', 'Blueprint', 'Systems Design', 'Data Driven System'],
     description:
       'Advanced modular weapon framework enabling designers to configure fully functional weapons - projectile, hitscan, ADS, recoil, and spray patterns - entirely through data assets, without touching a single Blueprint script.',
     language: 'Blueprint',
@@ -85,7 +85,7 @@ const skills = [
   {
     category: 'Technical',
     icon: 'fas fa-code',
-    items: ['Unreal Blueprint', 'Gameplay Ability System', 'EQS', 'State Machine', 'AI Framework'],
+    items: ['Unreal Blueprint', 'Gameplay Ability System', 'EQS', 'State Machine', 'AI Framework' , 'Rapid Prototyping'],
   },
   {
     category: 'Production',
@@ -115,7 +115,7 @@ export default function Home() {
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/70 via-black/50 to-[#080808]" />
 
         <div className="relative z-20 text-center px-6 flex flex-col items-center">
-          <p className="label-xs mb-6 animate-fade-up delay-100">Technical Game Designer &middot; Ubisoft</p>
+          <p className="label-xs mb-6 animate-fade-up delay-100">Technical Design &middot; AI Design &middot; Gameplay System Design</p>
           <h1 className="font-display text-7xl md:text-[10rem] lg:text-[12rem] leading-none text-white tracking-wider animate-fade-up delay-200">
             PRAJWAL<br />PANDEY
           </h1>
