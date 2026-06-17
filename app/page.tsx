@@ -12,7 +12,7 @@ const projects = [
     role: 'Technical Game Designer',
     tags: ['AAA', 'AI Design', 'Encounter Design', 'Realization'],
     description:
-      'Worked on the Sea Monster feature — a core PvE pillar where players battle giant creatures in open-sea encounters. Owned the full lifecycle from paper design through prototyping, realization, and post-launch balance.',
+      'Worked on the Sea Monster feature - a core PvE pillar where players battle giant creatures in open-sea encounters. Worked during the full lifecycle from paper design through prototyping, realization, and post-launch balance.',
   },
   {
     href: '/utilityai/',
@@ -35,7 +35,7 @@ const githubProjects = [
     num: '01',
     tags: ['Unreal Engine 5', 'C++', 'GAS', 'State Tree', 'Melee AI'],
     description:
-      'Enemy AI system for a Souls-like combat scenario. Each enemy wields different melee weapons and casts GAS-driven abilities, with behavior orchestrated entirely through Unreal\'s State Tree.',
+      'Built a modular Souls-like AI combat framework in Unreal Engine using StateTree and Gameplay Ability System, featuring weapon-driven behaviors, adaptive attack selection, and data-driven combat configuration.',
     language: 'C++',
   },
   {
@@ -44,7 +44,7 @@ const githubProjects = [
     num: '02',
     tags: ['Unreal Engine 5', 'C++', 'GAS', 'AI Commands', 'Companion AI'],
     description:
-      'Tactical AI companion inspired by Ready or Not. Listens to player commands and executes them through Unreal\'s Gameplay Ability System — supports breach, cover, move, and engage orders.',
+      'Tactical AI companion inspired by Ready or Not. Listens to player commands and executes them through Unreal\'s Gameplay Ability System - supports breach, cover, move, and engage orders.',
     language: 'C++',
   },
   {
@@ -71,21 +71,21 @@ const githubProjects = [
     num: '05',
     tags: ['Unreal Engine 5', 'Blueprint', 'Systems Design', 'Data Assets'],
     description:
-      'Advanced modular weapon framework enabling designers to configure fully functional weapons — projectile, hitscan, ADS, recoil, and spray patterns — entirely through data assets, without touching a single Blueprint script.',
+      'Advanced modular weapon framework enabling designers to configure fully functional weapons - projectile, hitscan, ADS, recoil, and spray patterns - entirely through data assets, without touching a single Blueprint script.',
     language: 'Blueprint',
   },
 ]
 
 const skills = [
   {
-    category: 'Game Design',
+    category: 'Design',
     icon: 'fas fa-gamepad',
-    items: ['Systems Design', 'Encounter Design', 'Combat Design', 'Prototyping', 'Balancing & Tuning'],
+    items: ['Systems Design', 'AI Design', 'Combat Design', 'System Architecture', 'Gameplay Balancing'],
   },
   {
     category: 'Technical',
     icon: 'fas fa-code',
-    items: ['Unreal Blueprint', 'C++', 'EQS', 'Behavior Trees', 'Visual Scripting'],
+    items: ['Unreal Blueprint', 'Gameplay Ability System', 'EQS', 'State Machine', 'AI Framework'],
   },
   {
     category: 'Production',
@@ -199,7 +199,7 @@ export default function Home() {
           <p className="label-xs mb-3">GitHub</p>
           <h2 className="font-display text-5xl md:text-6xl text-white tracking-wider">OPEN SOURCE</h2>
           <p className="mt-4 text-zinc-500 text-sm max-w-xl">
-            Personal R&amp;D projects — prototypes built to explore mechanics, systems, and AI techniques in Unreal Engine.
+            Personal R&amp;D projects - prototypes built to explore mechanics, systems, and AI techniques in Unreal Engine.
           </p>
         </div>
 
@@ -311,13 +311,13 @@ export default function Home() {
               </div>
 
               <p className="text-zinc-300 leading-relaxed mb-4">
-                I&apos;m a Technical Game Designer at Ubisoft, passionate about bridging creative design and technical execution to build immersive player experiences.
+                I&apos;m a Technical Game Designer with almost 3 years of industry experience specializing in AI architecture, Boss Encounter design, and Gameplay systems.
               </p>
               <p className="text-zinc-400 leading-relaxed mb-4">
-                I specialize in AAA gameplay systems, mechanics prototyping, and scripting with a focus on optimization and scalability. I&apos;ve worked with proprietary engines and cross-discipline teams to ship features that resonate with players.
+                I have experience in AAA gameplay systems, mechanics prototyping, and scripting with a focus on optimization and scalability. I&apos;ve worked with proprietary engines and cross-discipline teams to ship features that resonate with players.
               </p>
               <p className="text-zinc-400 leading-relaxed mb-10">
-                I thrive at the intersection of creative ambition and technical execution &mdash; where the best gameplay lives.
+                I enjoy building data-driven systems designed for designer-owned iteration.
               </p>
 
               <div className="flex flex-wrap gap-3 mb-8">

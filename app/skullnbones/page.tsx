@@ -3,18 +3,18 @@ import Navbar from '@/components/Navbar'
 import SwiperCarousel from '@/components/SwiperCarousel'
 
 export const metadata: Metadata = {
-  title: 'Skull and Bones – Prajwal Pandey',
+  title: 'Skull and Bones - Prajwal Pandey',
 }
 
 const responsibilities = [
-  'Owned the Sea Monster feature — a core PvE pillar where players combat giant creatures in open-sea encounters.',
+  'Worked on the Sea Monster feature — a core PvE pillar where players combat giant creatures in open-sea encounters.',
   'Designed encounter flow, spawn logic, and phase transitions to create a dynamic challenge that scaled with player progression.',
   'Built quick prototypes and iterated rapidly from paper design to playable build in a proprietary engine.',
   'Established a functional design pipeline and toolset in close collaboration with tech and design leads.',
   'Designed a modular AI system providing flexibility and reusability across encounter variants.',
   'Collaborated with the art team to achieve cinematic quality while preserving gameplay readability.',
   'Partnered with the animation team on attack timings and tech anim workflows for smooth, responsive combat.',
-  'Led realization integration — working with VFX, audio, and UX to deliver complete, shippable encounters.',
+  'Supported realization integration - working with VFX, audio, and UX to deliver complete, shippable encounters.',
   'Shipped and supported the full feature post-launch, responding to live player data and balance feedback.',
 ]
 
@@ -37,7 +37,7 @@ export default function SkullNBonesPage() {
         />
         <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#080808] via-black/60 to-black/20" />
         <div className="relative z-20 max-w-7xl mx-auto w-full px-6 md:px-10 pb-16 pt-32">
-          <p className="label-xs mb-4">Ubisoft Singapore &middot; AAA Title</p>
+          <p className="label-xs mb-4">Ubisoft India &middot; AAA Title</p>
           <h1 className="font-display text-6xl md:text-8xl lg:text-[9rem] text-white tracking-wider leading-none mb-4">
             SKULL<br />AND BONES
           </h1>
@@ -51,7 +51,7 @@ export default function SkullNBonesPage() {
       <div className="border-y border-white/5 bg-[#0d0d0d]">
         <div className="max-w-7xl mx-auto px-6 md:px-10 py-6 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { label: 'Studio', value: 'Ubisoft Singapore' },
+            { label: 'Studio', value: 'Ubisoft India' },
             { label: 'Role', value: 'Technical Game Designer' },
             { label: 'Feature', value: 'Sea Monster' },
             { label: 'Platform', value: 'PS5 / XSX / PC' },
@@ -68,11 +68,11 @@ export default function SkullNBonesPage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
           <p className="label-xs mb-3">Trailer</p>
-          <h2 className="font-display text-4xl md:text-5xl text-white tracking-wider mb-10">GAME OVERVIEW</h2>
+          <h2 className="font-display text-4xl md:text-5xl text-white tracking-wider mb-10">GAMEPLAY TRAILER</h2>
           <div className="aspect-[16/9] max-w-4xl mx-auto">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/76GXWdSdk5M?start=69"
+              src="https://youtu.be/ok5nDXUPO9E?si=m_O_sPMkBHjN89iH&t=13"
               title="Skull and Bones Trailer"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -118,7 +118,8 @@ export default function SkullNBonesPage() {
           <SwiperCarousel
             images={[
               { src: '/assets/sab-1.jpg', alt: 'Screenshot 1' },
-              { src: '/assets/sab-2.jpg', alt: 'Screenshot 2' },
+              { src: '/assets/sab-2.jpg', alt: 'Screenshot 2' }, 
+                { src: '/assets/sab-3.jpg', alt: 'Screenshot 3' },
             ]}
           />
         </div>
@@ -128,11 +129,11 @@ export default function SkullNBonesPage() {
       <section className="py-20 border-t border-white/5 bg-[#0d0d0d]">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
           <p className="label-xs mb-3">Video</p>
-          <h2 className="font-display text-4xl md:text-5xl text-white tracking-wider mb-10">GAMEPLAY</h2>
+          <h2 className="font-display text-4xl md:text-5xl text-white tracking-wider mb-10">GAMEPLAY SHOWCASE</h2>
           <div className="aspect-[16/9] max-w-4xl mx-auto">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/q4x2dnri0FM?si=1KSWfRaluM5FY5hm"
+              src="https://youtu.be/lYhZS1X-1ek?si=k77h8hHLiwQa5Jfn&t=293"
               title="Skull and Bones Gameplay"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
