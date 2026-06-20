@@ -8,7 +8,7 @@ const projects = [
     alt: 'Skull and Bones',
     num: '01',
     title: 'Skull and Bones',
-    studio: 'Ubisoft Singapore',
+    studio: 'Ubisoft',
     role: 'Technical Game Designer',
     tags: ['AAA', 'AI Design', 'Encounter Design', 'Live Ops Support'],
     description:
@@ -311,7 +311,7 @@ export default function Home() {
               </div>
 
               <p className="text-zinc-300 leading-relaxed mb-4">
-                I&apos;m a Technical Game Designer with almost 3 years of industry experience specializing in AI architecture, Boss Encounter design, and Gameplay systems.
+                I&apos;m a Technical Game Designer with 3 years of industry experience specializing in AI architecture, Boss Encounter design, and Gameplay systems.
               </p>
               <p className="text-zinc-400 leading-relaxed mb-4">
                 I have experience in AAA gameplay systems, mechanics prototyping, and scripting with a focus on optimization and scalability. I&apos;ve worked with proprietary engines and cross-discipline teams to ship features that resonate with players.
