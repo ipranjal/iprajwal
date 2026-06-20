@@ -72,8 +72,8 @@ export default function SkullNBonesPage() {
           <div className="aspect-[16/9] max-w-4xl mx-auto">
             <iframe
               className="w-full h-full"
-              src="https://youtu.be/ok5nDXUPO9E?si=m_O_sPMkBHjN89iH&t=13"
-              title="Skull and Bones Trailer"
+              src="https://www.youtube.com/embed/ok5nDXUPO9E?si=3lye9ekO7RwKM85j&amp;start=13"
+              title="Skull and Bones 'Eye of the Beast' Kraken Gameplay Trailer"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
@@ -133,8 +133,8 @@ export default function SkullNBonesPage() {
           <div className="aspect-[16/9] max-w-4xl mx-auto">
             <iframe
               className="w-full h-full"
-              src="https://youtu.be/lYhZS1X-1ek?si=k77h8hHLiwQa5Jfn&t=293"
-              title="Skull and Bones Gameplay"
+              src="https://www.youtube.com/embed/lYhZS1X-1ek?si=X_YrOb93JoD6mocl&amp;start=293"
+              title="Skull and Bones: Kraken Exclusive First Look"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
